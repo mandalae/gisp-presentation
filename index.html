@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>How I used DevOps to help fight COVID-19</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="shortcut icon" type="image/png" href="assets/globe.png"/>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-background-image="https://gisp.org.uk/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## How I used DevOps to help fight COVID-19
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="https://gisp.org.uk/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## The Team
+						<p class="fragment fade in">**Dr Stewart Wilkie**</p>
+						<p class="fragment fade in">**Dr Jocelyn Skaaning**</p>
+						<p class="fragment fade in">**Chris Skaaning**</p>
+						<p class="fragment fade in">**Alex Gagarin**</p>
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="https://gisp.org.uk/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## The problem
+						<ul>
+    						<li>Information overload for GPs</li>
+    						<li>No ready resource available to collect and share all the information</li>
+						</ul>
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="https://gisp.org.uk/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## Solutions
+						<p class="fragment fade in">**Google Docs organisation**</p>
+						<p class="fragment fade in">**Hosted Wikimedia site**</p>
+						<p class="fragment fade in">**Standard S3 bucket**</p>
+						<p class="fragment fade in">**GP Information Sharing portal**</p>
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="https://gisp.org.uk/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## Overall Architecture
+
+						![Overall Diagram](/assets/overall-diagram.svg)
+					</textarea>
+				</section>
+                <section data-markdown data-background-image="https://gisp.org.uk/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## SDLC
+
+						![Overall Diagram](/assets/sdlc-diagram.svg)
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+
+				// Paralax image
+			});
+		</script>
+	</body>
+</html>
