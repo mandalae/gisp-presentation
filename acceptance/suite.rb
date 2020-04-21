@@ -18,6 +18,6 @@ def run
 end
 
 run do
-  @driver.get 'http://presentation.gisp.org.uk'
+  @driver.get 'http://devops.skaaning.ninja'
   expect(@driver.title).to eql "How I used DevOps to help fight COVID-19"
 end

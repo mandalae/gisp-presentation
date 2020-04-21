@@ -41,7 +41,7 @@ jobs:
       - run:
           # Deploy everything from the current directory to an S3 bucket
           name: Deploy to S3
-          command: aws s3 sync ./ s3://presentation.gisp.org.uk --delete --acl public-read
+          command: aws s3 sync ./ s3://devops.skaaning.ninja --delete --acl public-read
   acceptanceTests:
     docker:
       - image: circleci/ruby:2.5.1-node-browsers
