@@ -67,18 +67,105 @@
 						<p class="fragment fade in">**Incremental feature building based on gathered data**</p>
 					</textarea>
 				</section>
-                <section data-markdown data-background-image="/assets/covid.png" data-background-opacity="0.3">
-					<textarea data-template>
+                <section data-background-image="/assets/covid.png" data-background-opacity="0.3">
+					<section data-markdown >
+                    <textarea data-template>
 						## SDLC
 
 						![Overall Diagram](/assets/fancy-sdlc.png)
 					</textarea>
+                    </section>
+                    <section data-markdown>
+                    <textarea data-template>
+						## Grafana and Cloud Watch
+
+						![Overall Diagram](/assets/grafana.png)
+					</textarea>
+                    </section>
 				</section>
-				<section data-markdown data-background-image="/assets/covid.png" data-background-opacity="0.3">
-					<textarea data-template>
+                <section data-background-image="/assets/covid.png" data-background-opacity="0.3">
+					<section data-markdown >
+                    <textarea data-template>
+						## Phase 1
+
+						![Overall Diagram](/assets/diagram-phase-1.png)
+					</textarea>
+                    </section>
+                    <section data-markdown>
+                    <textarea data-template>
+						## Phase 1
+						<p class="fragment fade in">**Route 53 domain**</p>
+						<p class="fragment fade in">**Cloud Front CDN**</p>
+						<p class="fragment fade in">**S3 Web Bucket**</p>
+						<p class="fragment fade in">**API Gateway HTTP API**</p>
+						<p class="fragment fade in">**Lambdas for functionality**</p>
+						<p class="fragment fade in">**S3 Document bucket**</p>
+						<p class="fragment fade in">**Invite and Credentials DynamoDB**</p>
+					</textarea>
+                    </section>
+				</section>
+                <section data-background-image="/assets/covid.png" data-background-opacity="0.3">
+					<section data-markdown >
+                    <textarea data-template>
+						## Phase 2
+
+						![Overall Diagram](/assets/diagram-phase-2.png)
+					</textarea>
+                    </section>
+                    <section data-markdown>
+                    <textarea data-template>
+						## Phase 2
+						<p class="fragment fade in">**AWS Certificate Manager**</p>
+						<p class="fragment fade in">**Pre-signed URLs for S3 in Document bucket**</p>
+						<p class="fragment fade in">**Still API Gateway HTTP API**</p>
+						<p class="fragment fade in">**Lambdas for functionality**</p>
+						<p class="fragment fade in">**Still using DynamoDB for credentials**</p>
+						<p class="fragment fade in">**Emails sent through Gmail account**</p>
+						<p class="fragment fade in">**Metrics enabled on S3 Document bucket**</p>
+					</textarea>
+                    </section>
+				</section>
+                <section data-background-image="/assets/covid.png" data-background-opacity="0.3">
+					<section data-markdown >
+                    <textarea data-template>
 						## Overall Architecture
 
 						![Overall Diagram](/assets/fancy-overall.png)
+					</textarea>
+                    </section>
+                    <section data-markdown>
+                    <textarea data-template>
+						## Final Architecture
+						<p class="fragment fade in">**Cognito for user credentials**</p>
+						<p class="fragment fade in">**API Gateway REST API with Cognito Integration**</p>
+						<p class="fragment fade in">**Additional functionality added to UI**</p>
+						<p class="fragment fade in">**Emails sent through SES**</p>
+						<p class="fragment fade in">**AWS Pinpoint set up for user analytics**</p>
+					</textarea>
+                    </section>
+                    <section data-markdown>
+                    <textarea data-template>
+						## Architectural Features
+						<p class="fragment fade in">**Can scale to 20 million users (Cognito)**</p>
+						<p class="fragment fade in">**Can theoretically scale to unlimited Lambda executions**</p>
+						<p class="fragment fade in">**Caching of frontend near the users (CloudFront CDN)**</p>
+						<p class="fragment fade in">**Database scaling automatically (DynamoDB)**</p>
+						<p class="fragment fade in">**Paying only for what's being used (So far around $2 per month)**</p>
+					</textarea>
+                    </section>
+				</section>
+                <section data-markdown data-background-image="/assets/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## Some numbers
+						<p class="fragment fade in">**Around 5000 GPs in Scotland**</p>
+						<p class="fragment fade in">**We reached ~1500 GPs within two weeks of COVID-19 information overload**</p>
+						<p class="fragment fade in">**GPs all over UK started logging in**</p>
+						<p class="fragment fade in">**Currently at around 600 active users**</p>
+					</textarea>
+				</section>
+                <section data-markdown data-background-image="/assets/covid.png" data-background-opacity="0.3">
+					<textarea data-template>
+						## Questions?
 					</textarea>
 				</section>
 			</div>
